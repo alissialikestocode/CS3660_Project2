@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{{url_for('static', filename='/css/styles.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
             <div class="row justify-content-center">
                 <div class="row col-md-4">
                 <div class="card">
-                    <img class="card-img-top card-thumbnail" src="{{url_for('static', filename='/images/golden.png')}}" alt="A golden retriever dog smiling">
+                    <img class="card-img-top card-thumbnail" src="{{url_for('static', filename='images/golden.png')}}" alt="A golden retriever dog smiling">
                     <div class="card-body">
                         <h5 card-title>Dog Care</h5>
                         <ul class="list-group list-group-flush">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="row col-md-4 my-xs-3 mx-md-3">
                     <div class="card">
-                        <img class="card-img-top card-thumbnail" src="{{url_for('static', filename='/images/orangekitten.jpg')}}" alt="An orange kitten laying on a cushion">
+                        <img class="card-img-top card-thumbnail" src="{{url_for('static', filename='images/orangekitten.jpg')}}" alt="An orange kitten laying on a cushion">
                         <div class="card-body">
                             <h5 card-title>Cat Care</h5>
                             <ul class="list-group list-group-flush">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="row col-md-4">
                     <div class="card">
-                        <img class="card-img-top card-thumbnail" src="{{url_for('static', filename='/images/travelpets.jpg')}}" alt="Pets sitting on luggage">
+                        <img class="card-img-top card-thumbnail" src="{{url_for('static', filename='images/travelpets.jpg')}}" alt="Pets sitting on luggage">
                         <div class="card-body">
                             <h5 card-title>Special Care</h5>
                             <ul class="list-group list-group-flush">
@@ -61,7 +61,7 @@
     </body>
     <footer data-include="{{url_for('common_things', pathname='footer.html')}}"></footer>
     <script>basedir = "../";</script>
-    <script src="{{url_for('static', filename='/js/index.js')}}"></script>
+    <script src="{{url_for('static', filename='js/index.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded',
