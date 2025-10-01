@@ -65,17 +65,30 @@ def pay():
 @app.route('/common/<path:pathname>')
 def common_things(pathname):
     """
-    Route to Footer page in common folder
+    Route to Nav and Footer pages in common folder
     """
-    return render_template(f'common/{pathname}')
+    return render_template(f'/common/{pathname}')
 
-# @app.route('/common/nav')
-# def common_nav():
+# @app.route('/static/css/<path:pathname>')
+# def css(pathname):
 #     """
-#     Route to Header page in common folder
+#     Route to CSS file 
 #     """
-#     return render_template('/common/nav.html')
+#     return render_template(f'/static/css/{pathname}')
 
+# @app.route('/static/js/<path:pathname>')
+# def js(pathname):
+#     """
+#     Route to JS file 
+#     """
+#     return render_template(f'/static/js/{pathname}')
+
+# @app.route('/static/images/<path:pathname>')
+# def images(pathname):
+#     """
+#     Route to Images file 
+#     """
+#     return render_template(f'/static/images/{pathname}')
 
 if __name__ == '__main__':
     app.run(debug=True)
