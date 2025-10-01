@@ -20,7 +20,7 @@ def old_page():
     """
     return redirect(url_for('home'))
 
-@app.route('/professionals')
+@app.route('/professionals', strict_slashes=True)
 def professionals():
     """
     Route to Professionals page
