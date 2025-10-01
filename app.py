@@ -48,6 +48,13 @@ def login():
     """
     return render_template('login.html')
 
+@app.route('/register')
+def register():
+    """
+    Route to Register page
+    """
+    return render_template('register.html')
+
 @app.route('/pay')
 def pay():
     """
