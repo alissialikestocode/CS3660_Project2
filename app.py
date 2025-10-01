@@ -76,13 +76,6 @@ def common_nav():
     """
     return render_template('/common/nav.html')
 
-# @app.route('/static/js/index')
-# def js():
-#     """
-#     Route to javascript file
-#     """
-#     return render_template("/static/js/index.js")
-
 
 if __name__ == '__main__':
     app.run(debug=True)
