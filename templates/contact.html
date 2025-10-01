@@ -13,7 +13,7 @@
             rel="stylesheet">
     </head>
     <body>
-        <nav data-include="{{url_for('common_nav')}}"></nav>
+        <nav data-include="{{url_for('common_things', pathname='nav.html')}}"></nav>
         <main>
             <h2 class="text-center">Contact Us</h2>
                 <form class="container">
@@ -43,7 +43,7 @@
                 </form>
         </main>
     </body>
-    <footer data-include="{{url_for('common_footer')}}"></footer>
+    <footer data-include="{{url_for('common_things', pathname='footer.html')}}"></footer>
     <script>basedir = "../";</script>
     <script src="{{url_for('static', filename='/js/index.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>

@@ -20,7 +20,7 @@ def old_page():
     """
     return redirect(url_for('home'))
 
-@app.route('/professionals', strict_slashes=True)
+@app.route('/professionals')
 def professionals():
     """
     Route to Professionals page
@@ -62,19 +62,19 @@ def pay():
     """
     return render_template('pay.html')
 
-@app.route('/common/footer')
-def common_footer():
+@app.route('/common/<path:pathname>')
+def common_things(pathname):
     """
     Route to Footer page in common folder
     """
-    return render_template('/common/footer.html')
+    return render_template(f'common/{pathname}')
 
-@app.route('/common/nav')
-def common_nav():
-    """
-    Route to Header page in common folder
-    """
-    return render_template('/common/nav.html')
+# @app.route('/common/nav')
+# def common_nav():
+#     """
+#     Route to Header page in common folder
+#     """
+#     return render_template('/common/nav.html')
 
 
 if __name__ == '__main__':
