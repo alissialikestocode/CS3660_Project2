@@ -69,26 +69,19 @@ def common_nav():
     """
     return render_template('/common/nav.html')
 
-@app.route('/static/css/styles')
-def css_styles():
-    """
-    Route to css stylesheet
-    """
-    return render_template("/static/css/styles.css")
+# @app.route('/static/css/styles')
+# def css_styles():
+#     """
+#     Route to css stylesheet
+#     """
+#     return render_template("/static/css/styles.css")
 
-@app.route('/static/js/index')
-def js():
-    """
-    Route to javascript file
-    """
-    return render_template("/static/js/index.js")
-
-@app.route('/static/images/bg')
-def main_img():
-    """
-    Route to javascript file
-    """
-    return render_template("/static/images/bg.jpg")
+# @app.route('/static/js/index')
+# def js():
+#     """
+#     Route to javascript file
+#     """
+#     return render_template("/static/js/index.js")
 
 
 if __name__ == '__main__':
