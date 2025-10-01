@@ -76,13 +76,6 @@ def common_nav():
     """
     return render_template('/common/nav.html')
 
-# @app.route('/static/css/styles')
-# def css_styles():
-#     """
-#     Route to css stylesheet
-#     """
-#     return render_template("/static/css/styles.css")
-
 # @app.route('/static/js/index')
 # def js():
 #     """
