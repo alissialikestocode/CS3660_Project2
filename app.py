@@ -2,7 +2,8 @@
 app.py 
 """
 from flask import Flask, render_template
-from flask import redirect, url_for
+from flask import redirect
+from flask import send_file
 
 app = Flask(__name__)
 
@@ -14,11 +15,11 @@ def home():
     return render_template("index.html")
 
 @app.route('/')
-def old_page():
+def root():
     """
     Redirects '/' to '/home'
     """
-    return redirect(url_for('home'))
+    return redirect('home')
 
 @app.route('/professionals')
 def professionals():
@@ -62,33 +63,42 @@ def pay():
     """
     return render_template('pay.html')
 
-@app.route('/common/<path:pathname>')
-def common_things(pathname):
+# Common Routes
+@app.route('/common/nav.html')
+def nav():
     """
-    Route to Nav and Footer pages in common folder
+    Route to Nav
     """
-    return render_template(f'/common/{pathname}')
+    return render_template('common/nav.html')
 
-# @app.route('/static/css/<path:pathname>')
-# def css(pathname):
-#     """
-#     Route to CSS file 
-#     """
-#     return render_template(f'/static/css/{pathname}')
+@app.route('/common/footer.html')
+def footer():
+    """
+    Route to Footer
+    """
+    return render_template('common/footer.html')
 
-# @app.route('/static/js/<path:pathname>')
-# def js(pathname):
-#     """
-#     Route to JS file 
-#     """
-#     return render_template(f'/static/js/{pathname}')
+# Other Templates
+@app.route('/css/styles.css')
+def css():
+    """
+    Route to CSS file 
+    """
+    return send_file('static/css/styles.css')
 
-# @app.route('/static/images/<path:pathname>')
-# def images(pathname):
-#     """
-#     Route to Images file 
-#     """
-#     return render_template(f'/static/images/{pathname}')
+@app.route('/js/index.js')
+def js():
+    """
+    Route to JS file 
+    """
+    return send_file('static/js/index.js')
+
+@app.route('/images/<path:pathname>')
+def images(pathname):
+    """
+    Route to Images file 
+    """
+    return send_file(f'static/images/{pathname}')
 
 if __name__ == '__main__':
     app.run(debug=True)
