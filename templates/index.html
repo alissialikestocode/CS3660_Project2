@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav data-include="/common/nav.html"></nav>
+    <nav> {% include "nav.html" %} </nav>
     <main class="d-flex flex-column">
         <h1>Welcome to The Furbaby-Sitters Club!</h1>
         <div class="container main-pg">
@@ -40,15 +40,7 @@
             </div>
         </div>
     </main>
-    <footer data-include="common/footer.html" class="custom-footer"></footer>
+   <footer>{% include "nav.html" %}</footer>
 </body>
-<script>basedir = "";</script>
-<script src="js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded',
-        () => { includeall(); }
-    );
-</script>
-
 </html>

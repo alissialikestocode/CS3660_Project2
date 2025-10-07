@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav data-include="../common/nav.html"></nav>
+    <nav>{% include "nav.html" %}</nav>
     <main>
         <h2 class="text-center">Pay</h2>
         <form class="container">
@@ -62,14 +62,6 @@
         </form>
     </main>
 </body>
-<footer data-include="../common/footer.html"></footer>
-<script>basedir = "../";</script>
-<script src="../js/index.js"></script>
+<footer>{% include "footer.html" %}</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded',
-        () => { includeall(); }
-    );
-</script>
-
 </html>
