@@ -86,13 +86,6 @@ def css():
     """
     return send_file('static/css/styles.css')
 
-@app.route('/js/index.js')
-def js():
-    """
-    Route to JS file 
-    """
-    return send_file('static/js/index.js')
-
 @app.route('/images/<path:pathname>')
 def images(pathname):
     """
