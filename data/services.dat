@@ -1,0 +1,14 @@
+[
+    {
+        “name”: “Dog Care”, 
+        Services:[“Check-in ”, “Walking (Solo & Group)”, "Playing”]
+    },
+    {
+        “name”: “Cat Care”, 
+        ”Services”: [“Check-in”, “Litter Box Maintenance,” “Socialization”]
+    },
+    {
+        “name”: “Special Care”, 
+        ”Services”: [“Boarding”, “Puppy & Kitten Care,” “Light Medical Support”]
+    }
+]

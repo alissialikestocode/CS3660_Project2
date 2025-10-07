@@ -1,0 +1,14 @@
+[
+    {
+        “name”: “Kristy Thomas, President”, 
+        image: “static/images/KristyThomas.jpg”
+    },
+    {
+        “name”: “Claudia Kishi, Vice President”, 
+        image: “static/images/ClaudiaKishi.jpg”
+    },
+    {
+        “name”: “Jessi Ramsey, Jr. Officer”, 
+        image: “static/images/JessiRamsey.jpg”
+    }
+]
