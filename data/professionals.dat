@@ -1,14 +1,17 @@
 [
     {
-        “name”: “Kristy Thomas, President”, 
-        image: “static/images/KristyThomas.jpg”
+        "image":"KristyThomas.jpg",
+        "alt_txt":"A young girl with brown hair wearing a red baseball cap and smiling",
+        "name":"Kristy Thomas, President"
     },
     {
-        “name”: “Claudia Kishi, Vice President”, 
-        image: “static/images/ClaudiaKishi.jpg”
+        "image":"ClaudiaKishi.jpg",
+        "alt_txt":"An girl with straight black hair, cool hoop earrings, and a side ponytail smiling",
+        "name":"Claudia Kishi, Vice President"
     },
-    {
-        “name”: “Jessi Ramsey, Jr. Officer”, 
-        image: “static/images/JessiRamsey.jpg”
+    {  
+        "image":"JessiRamsey.jpg",
+        "alt_txt":"A young girl smiling with voluminous bangs and her curly hair in a low ponytail",
+        "name":"Jessi Ramsey, Jr. Officer"
     }
 ]
