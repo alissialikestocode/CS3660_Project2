@@ -1,10 +1,10 @@
 """
 app.py 
 """
-import json
 from flask import Flask, render_template
 from flask import redirect
 from flask import send_file
+from model import get_professionals, get_services
 
 app = Flask(__name__)
 
@@ -27,17 +27,15 @@ def professionals():
     """
     Route to Professionals page
     """
-    with open ("data/professionals.dat", "r", encoding="UTF-8") as f:
-        professionals_data = json.load(f)
-    return render_template('professionals.html', professionals=professionals_data)
+    professionals_data = get_professionals()
+    return render_template('professionals.html', professionals_data=professionals_data)
 
 @app.route('/services')
 def services():
     """
     Route to Services page
     """
-    with open ("data/services.dat", "r", encoding="UTF-8") as f:
-        categories = json.load(f)
+    categories = get_services()
     return render_template('services.html', categories=categories)
 
 @app.route('/contact')
