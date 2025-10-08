@@ -209,3 +209,6 @@ __marimo__/
 # Flask stuff to ignore
 **/index.cgi
 **/.htaccess
+
+# Weird Mac os stuff to ignore
+.DS_Store
