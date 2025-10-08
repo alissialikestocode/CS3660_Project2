@@ -2,47 +2,21 @@
 {% block main %}
         <h2>Services</h2>
         <div class="row justify-content-center">
+            {% for category in categories %}
             <div class="row col-md-4">
                 <div class="card">
-                    <img class="card-img-top card-thumbnail" src="static/images/golden.png"
-                        alt="A golden retriever dog smiling">
+                    <img class="card-img-top card-thumbnail" src="static/images/{{category.image}}"
+                        alt="{{category.alt}}">
                     <div class="card-body">
-                        <h5 card-title>Dog Care</h5>
+                        <h5 class="card-title">{{category.type}}</h5>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Check-in</li>
-                            <li class="list-group-item">Walking (Solo & Group)</li>
-                            <li class="list-group-item">Playing</li>
+                            {% for service in category.services %}
+                            <li class="list-group-item">{{service}}</li>
+                            {% endfor %}
                         </ul>
                     </div>
-                </div>
+                </div> 
             </div>
-            <div class="row col-md-4 my-xs-3 mx-md-3">
-                <div class="card">
-                    <img class="card-img-top card-thumbnail" src="static/images/orangekitten.jpg"
-                        alt="An orange kitten laying on a cushion">
-                    <div class="card-body">
-                        <h5 card-title>Cat Care</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Check-in</li>
-                            <li class="list-group-item">Litter Box Maintenance</li>
-                            <li class="list-group-item">Socialization</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row col-md-4">
-                <div class="card">
-                    <img class="card-img-top card-thumbnail" src="static/images/travelpets.jpg"
-                        alt="Pets sitting on luggage">
-                    <div class="card-body">
-                        <h5 card-title>Special Care</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Boarding</li>
-                            <li class="list-group-item">Puppy & Kitten Care</li>
-                            <li class="list-group-item">Light Medical Support</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
 {% endblock main %}

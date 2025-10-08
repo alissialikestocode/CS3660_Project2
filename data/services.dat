@@ -1,26 +1,32 @@
 [
-    {
-        “name” : “Dog Care”, 
-        Services : [
-            “Check-in ”,
-             “Walking (Solo & Group)”, 
-             "Playing”
+    {   
+        "image":"golden.png",
+        "alt_txt":"A golden retriever dog smiling",
+        "type":"Dog Care", 
+        "services":[
+            "Check-in",
+             "Walking (Solo & Group)", 
+             "Playing"
              ]
     },
-    {
-        “name” : “Cat Care”, 
-        ”Services” : [
-            “Check-in”, 
-            “Litter Box Maintenance,” 
-            “Socialization”
+    {   
+        "image":"orangekitten.jpg",
+        "alt_txt":"An orange kitten laying on a cushion",
+        "type":"Cat Care", 
+        "services":[
+            "Check-in", 
+            "Litter Box Maintenance", 
+            "Socialization"
             ]
     },
     {
-        “name” : “Special Care”, 
-        ”Services” : [
-            “Boarding”, 
-            “Puppy & Kitten Care,” 
-            “Light Medical Support”
+        "image":"travelpets.jpg",
+        "alt_txt":"Pets sitting on luggage",
+        "type":"Special Care", 
+        "services":[
+            "Boarding", 
+            "Puppy & Kitten Care", 
+            "Light Medical Support"
             ]
     }
 ]
